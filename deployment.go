@@ -74,7 +74,7 @@ func (r *marathonClient) Deployments() ([]*Deployment, error) {
 		return nil, err
 	}
 	// Allows loading of deployment steps from the Marathon v1.X API
-	// Implements a fix for issue https://github.com/gambol99/go-marathon/issues/153
+	// Implements a fix for issue https://github.com/haibeihabo/go-marathon/issues/153
 	for _, deployment := range deployments {
 		// Unmarshal pre-v1.X step
 		if err := json.Unmarshal(deployment.XXStepsRaw, &deployment.Steps); err != nil {

@@ -21,8 +21,8 @@ package main
 import (
 	"flag"
 
-	marathon "github.com/gambol99/go-marathon"
 	"github.com/golang/glog"
+	marathon "github.com/haibeihabo/go-marathon"
 )
 
 var marathonURL string

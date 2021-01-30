@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/gambol99/go-marathon.svg?branch=master)](https://travis-ci.org/gambol99/go-marathon)
-[![GoDoc](http://godoc.org/github.com/gambol99/go-marathon?status.png)](http://godoc.org/github.com/gambol99/go-marathon)
+[![GoDoc](http://godoc.org/github.com/haibeihabo/go-marathon?status.png)](http://godoc.org/github.com/haibeihabo/go-marathon)
 [![Go Report Card](https://goreportcard.com/badge/github.com/katallaxie/go-marathon)](https://goreportcard.com/report/github.com/katallaxie/go-marathon)
 [![Coverage Status](https://coveralls.io/repos/github/gambol99/go-marathon/badge.svg?branch=master)](https://coveralls.io/github/gambol99/go-marathon?branch=master)
 
@@ -29,7 +29,7 @@ You can use `examples/docker-compose.yml` in order to start a test cluster.
 
 ```go
 import (
-	marathon "github.com/gambol99/go-marathon"
+	marathon "github.com/haibeihabo/go-marathon"
 )
 
 marathonURL := "http://10.241.1.71:8080"
@@ -338,7 +338,7 @@ See the [contribution guidelines](CONTRIBUTING.md).
 
 ### Marathon Fake
 
-go-marathon employs a [fake Marathon implementation](https://github.com/gambol99/go-marathon/blob/master/testing_utils_test.go) for testing purposes. It [maintains a YML-encoded list of HTTP response messages](https://github.com/gambol99/go-marathon/blob/master/tests/rest-api/methods.yml) which are returned upon a successful match based upon a number of attributes, the so-called _message identifier_:
+go-marathon employs a [fake Marathon implementation](https://github.com/haibeihabo/go-marathon/blob/master/testing_utils_test.go) for testing purposes. It [maintains a YML-encoded list of HTTP response messages](https://github.com/haibeihabo/go-marathon/blob/master/tests/rest-api/methods.yml) which are returned upon a successful match based upon a number of attributes, the so-called _message identifier_:
 
 - HTTP URI (without the protocol and the hostname, e.g., `/v2/apps`)
 - HTTP method (e.g., `GET`)
